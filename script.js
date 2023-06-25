@@ -2,10 +2,16 @@
 
 function palindrome(str){
 	let s="";
-	for(let i=str.length-1;i>=0;i--){
-	    s+=str[i];
+	for(let i=0;i<str.length;i++){
+	   if(str[i]!=" "){
+		    s+=str[i];
+	   }
 	}
-	if(s===str){
+	let rev="";
+	for(let i=s.length-1;i>=0;i--){
+		rev+=s[i];
+	}
+	if(s===rev){
 		return true;
 	}else{
 		return false;
