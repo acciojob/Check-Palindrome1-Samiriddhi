@@ -2,7 +2,7 @@
 
 function palindrome(str){
 	const string = str.toLowerCase();
- const len = str.length;
+    const len = str.length;
  
     // loop through half of the string
     for (let i = 0; i < len / 2; i++) {
